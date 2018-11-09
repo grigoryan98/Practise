@@ -16,8 +16,8 @@ namespace CarApp
             c.Speed = 45;
             c.Color = "black";
 
-            Console.WriteLine($"Your car  name  is {c.PetName}");
-            c.DisplaySets();
+            //Console.WriteLine($"Your car  name  is {c.PetName}");
+            //c.DisplaySets();
 
             Garage g = new Garage();
 
@@ -25,7 +25,7 @@ namespace CarApp
             // da kareli klini  ayn depqum erb stxcvi obyekt;
             // Console.WriteLine(g.MyCar.PetName);
             g.MyCar = c;
-            g.MyCar = c1;
+            
             Console.WriteLine($"Number if cars in garage {g.NumberOfCars}");
             Console.WriteLine($"your car  name is {g.MyCar.PetName}");
 

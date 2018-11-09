@@ -8,19 +8,33 @@ namespace CarApp
 {
     class Garage
     {
-        public  int NumberOfCars { get; set; }
-        public Car MyCar { get; set; }
+        //public  int NumberOfCars { get; set; }
+        //public Car MyCar { get; set; }
+
+        //public Garage()
+        //{
+        //    MyCar = new Car();
+        //    NumberOfCars = 1;
+        //}
+
+        //public Garage(Car car, int num)
+        //{
+        //    MyCar = car;
+        //    NumberOfCars = num;
+        //}
+
+        public int NumberOfcars { get; set; } = 1;
+        public Car MyCar { get; set; } = new Car();
 
         public Garage()
         {
-            MyCar = new Car();
-            NumberOfCars = 1;
+
         }
 
-        public Garage(Car car, int num)
+        public Garage(Car car, int number)
         {
             MyCar = car;
-            NumberOfCars = num;
+            NumberOfcars = number;
         }
     }
 }
