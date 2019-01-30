@@ -25,6 +25,15 @@ namespace Stacks
             sd.StackPop(st);
             sd.StackPop(st);
 
+            try
+            {
+                sd.StackPop(st);
+            }
+            catch(InvalidOperationException)
+            {
+                Console.WriteLine("Stack empty!");
+            }
+
         }
     }
 }
